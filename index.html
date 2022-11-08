@@ -349,46 +349,53 @@
       <div class="modal-content">
         <div class="modal-header">Zostaw swoje dane w formularzu poniżej</div>
         <form class="form">
-          <fieldset class="fieldset">
+          <div class="fieldset">
             <label class="label" for="name">Imie</label>
             <svg class="label-icon">
               <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
             <input class="input" type="text" id="name" />
-          </fieldset>
-          <fieldset class="fieldset">
+          </div>
+          <div class="fieldset">
             <label class="label" for="tel">Telefon</label>
             <svg class="label-icon">
               <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
             <input class="input" type="tel" id="tel" />
-          </fieldset>
-          <fieldset class="fieldset">
+          </div>
+          <div class="fieldset">
             <label class="label" for="mail">Email</label>
             <svg class="label-icon">
               <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
             </svg>
             <input class="input" type="email" id="mail" />
-          </fieldset>
-          <fieldset class="fieldset-comment">
-            <label class="label" for="comment">Komentarz</label>
-            <input class="input-comment" type="textarea" placeholder="Wprowadź tekst" id="comment" />
-          </fieldset>
+          </div>
+          <div class="fieldset-comment">
+            <label class="label" for="comment">Komentarz
+              <textarea class="input-comment" type="textarea" placeholder="Wprowadź tekst"
+                id="comment"></textarea></label>
+          </div>
           <label class="label-checkbox">
             <input class="checkbox" type="checkbox" id="legal" />
-            <span class="checkbox-legal">
-              Oświadczam
-              iż akceptuję</span>
-            <a href="#">Regulamin</a>
-            <span class="checkbox-legal"> i </span>
-            <a href="#">Politykę Prywatności.</a>
+            <div class="checkbox-legal">
+              <span>
+                Oświadczam
+                iż akceptuję</span>
+              <a href="#">Regulamin</a>
+              <span class="checkbox-legal"> i </span>
+              <a href="#">Politykę Prywatności.</a>
+            </div>
           </label>
           <div class="modal-button">
             <button class="modal-btn" type="button">Wyślij</button>
           </div>
         </form>
       </div>
-      <button type="button" class="close-btn" data-modal-close>X</button>
+      <button type="button" class="close-btn" data-modal-close>
+        <svg width="11" height="11">
+          <use href="./images/icons.svg#icon-Vector"></use>
+        </svg>
+      </button>
     </div>
   </div>
 
