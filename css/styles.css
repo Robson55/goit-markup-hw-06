@@ -755,13 +755,12 @@ h6 {
 }
 
 .fieldset {
-  width: 448px;
-  height: 40px;
-  border-radius: 4px;
-  margin-top: 28px;
   display: flex;
-  position: relative;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  align-items: center;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--main-color);
 }
 
 .fieldset-comment {
@@ -775,8 +774,10 @@ h6 {
 }
 
 .label {
-  position: absolute;
-  top: -16px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
 }
 
 .label-icon {
@@ -791,11 +792,11 @@ h6 {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--second-color)
 }
 
-.input {
-  border: 0;
+.fieldset input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   background-color: transparent;
   width: 406px;
   position: absolute;
@@ -809,7 +810,7 @@ h6 {
   width: 432px;
   position: absolute;
   min-height: 108px;
-  top: 15px;
+  top: 0px;
   left: 0px;
   padding-top: 12px;
   padding-left: 16px;
@@ -850,8 +851,8 @@ h6 {
   font-size: 14px;
 }
 
-.fieldset:hover,
-.fieldset:focus,
-.fieldset:active {
+.fieldset input:hover+svg,
+.fieldset input:active {
+  fill: var(--accent-color);
   border-color: var(--accent-color);
 }
