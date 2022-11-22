@@ -771,7 +771,7 @@ h6 {
   width: 448px;
   min-height: 120px;
   border-radius: 4px;
-  margin-top: 28px;
+  margin-top: 4px;
   display: flex;
   position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -782,6 +782,7 @@ h6 {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 1);
 }
 
 .label-icon {
@@ -815,10 +816,16 @@ h6 {
   max-width: 432px;
   position: absolute;
   min-height: 108px;
+  max-height: 108px;
   top: 0px;
   left: 0px;
   padding-top: 12px;
   padding-left: 16px;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.5);
+  line-height: 14.06px;
 }
 
 .label-checkbox {
@@ -856,12 +863,18 @@ h6 {
   font-size: 14px;
 }
 
-.fieldset input:hover,
-.fieldset input:focus,
+.checkbox-svg {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  left: 54px;
+  border-radius: 2px;
+}
+
+.input:focus,
 .label textarea:hover,
 .label textarea:focus,
 .fieldset input:focus+svg {
-  fill: var(--secondary-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: var(--secondary-color);
+  fill: var(--accent-color);
+  border-color: red;
 }
